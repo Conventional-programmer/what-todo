@@ -1,0 +1,26 @@
+.todos{
+    grid-area: todos;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+.todo-table{
+    width: 100%;
+}
+
+.todos tr:nth-child(even){background-color: var(--background)}
+
+.todos tr:hover {background-color: var(--accent);}
+.todos tr:hover .colored-select {background-color: var(--accent);}
+
+.todos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--dominant);
+    color: white;
+}
+.todos td {
+    color: black;
+}

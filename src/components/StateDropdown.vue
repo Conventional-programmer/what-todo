@@ -1,5 +1,5 @@
 <template>
-  <select v-model="select" @change="TodoChanged">
+  <select class="colored-select" v-model="select" @change="TodoChanged">
     <option v-for="state in todoStates" :value="TodoState[state]" :key="state">
       {{state}}
     </option>
@@ -23,5 +23,12 @@ import {defineProps, ref} from "vue";
 </script>
 
 <style scoped>
-
+  .colored-select{
+    background-color: var(--background);
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
 </style>

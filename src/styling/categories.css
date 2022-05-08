@@ -1,0 +1,15 @@
+.categories{
+    grid-area: todos;
+}
+.category-name {
+    color: var(--highlight);
+}
+.category{
+    color: var(--dominant);
+}
+.category-link.router-link-exact-active .category-name{
+    color: var(--background);
+}
+.category-link{
+    text-decoration: none;
+}

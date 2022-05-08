@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import TodoItem from  '@/components/TodoItem.vue'
+import '@/styling/todo.css'
+import TodoItem from '@/components/TodoItemSmall.vue'
 import Todo from '../classes/todo'
 import TodoState from '../classes/TodoState'
 
@@ -7,7 +8,7 @@ const todos =  [{name: "bert", description: "gert", state: TodoState.Todo, subto
 </script>
 <template>
   <div class="todos">
-    <table>
+    <table class="todo-table">
       <tr>
         <th>Naam</th>
         <th>Description</th>
@@ -18,8 +19,3 @@ const todos =  [{name: "bert", description: "gert", state: TodoState.Todo, subto
     </table>
   </div>
 </template>
-<style scoped>
-  .todos{
-    grid-area: todos;
-  }
-</style>
