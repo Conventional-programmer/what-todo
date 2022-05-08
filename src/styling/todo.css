@@ -1,24 +1,30 @@
 .todos{
-    grid-area: todos;
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
     width: 100%;
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
 }
 .todo-table{
     width: 100%;
+    border-spacing: 1px;
 }
 
-.todos tr:nth-child(even){background-color: var(--background)}
+.todos tr{
+    background-color: lightgray;
+}
 
-.todos tr:hover {background-color: var(--accent);}
-.todos tr:hover .colored-select {background-color: var(--accent);}
+td{
+    padding: 12px !important;
+}
+
+.todos tr:hover, tr:hover .colored-select {
+    background-color: grey;
+}
 
 .todos th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px;
     text-align: left;
-    background-color: var(--dominant);
+    background-color: var(--accent);
     color: white;
 }
 .todos td {

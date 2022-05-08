@@ -1,8 +1,10 @@
 <template>
   <div class="page">
-    <nav>
-      <CategorySelector></CategorySelector>
-    </nav>
+    <div class="sidebar">
+      <nav>
+        <CategorySelector></CategorySelector>
+      </nav>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -20,16 +22,25 @@
 }
 .page
 {
-  display: grid;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100vh;
+  width: 100%;
   grid-template-areas: "nav todos todos";
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+nav{
+  text-align: left;
 }
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.sidebar{
+  width: 300px;
+  border-inline: 1px solid;
+  height: 100%;
+  background-color: #2c3e50;
 }
 </style>

@@ -12,7 +12,7 @@ const todos =  [{name: "bert", description: "gert", state: TodoState.Todo, subto
       <tr>
         <th>Naam</th>
         <th>Description</th>
-        <th>Gedaan</th>
+        <th>status</th>
       </tr>
       <TodoItem v-bind:key="todo.id" v-bind:todo="todo" v-for="todo in todos">
       </TodoItem>

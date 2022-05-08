@@ -24,11 +24,18 @@ import {defineProps, ref} from "vue";
 
 <style scoped>
   .colored-select{
-    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: lightgray;
     border-radius: 0px;
     box-shadow: none;
     border: none;
     outline: none;
     width: 100%;
+    height: 100%;
+  }
+
+  .colored-select > option{
+    background-color: white;
   }
 </style>
